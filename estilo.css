@@ -16,104 +16,97 @@ h1{
 
 #animar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 20vw;
 }
 
-.item{
-    background-color: black;
-    height: 40px;
+#um{
+    background-color: red;
+    height: 120px;
     width: 8px;
-    animation: esticar 1s linear infinite;
+    animation: um 1s linear infinite;
 }
 
-.item:nth-child(1){
-    animation-delay: 0s;
+#dois{
+    background-color: orange;
+    height: 120px;
+    width: 8px;
+    animation: dois 2s linear infinite;
 }
 
-.item:nth-child(2){
-    animation-delay: 0.1s;
+#tres{
+    background-color: yellow;
+    height: 120px;
+    width: 8px;
+    animation: tres 3s linear infinite;
 }
 
-.item:nth-child(3){
-    animation-delay: 0.2s;
+#quatro{
+    background-color: green;
+    height: 120px;
+    width: 8px;
+    animation: quatro 4s linear infinite;
 }
 
-.item:nth-child(4){
-    animation-delay: 0.3s;
+#cinco{
+    background-color:aquamarine;
+    height: 120px;
+    width: 8px;
+    animation: cinco 5s linear infinite;
 }
 
-.item:nth-child(5){
-    animation-delay: 0.4s;
+#sexta{
+    background-color:blue;
+    height: 120px;
+    width: 8px;
+    animation: seis 6s linear infinite;
 }
 
-.item:nth-child(6){
-    animation-delay: 0.5s;
+#sete{
+    background-color: purple;
+    height: 120px;
+    width: 8px;
+    animation: sete 7s linear infinite;
 }
 
-.item:nth-child(7){
-    animation-delay: 0.6s;
-}
-
-.item:nth-child(8){
-    animation-delay: 0.7s;
-}
-
-.item:nth-child(9){
-    animation-delay: 0.8s;
-}
-
-.item:nth-child(10){
-    animation-delay: 0.9s;
-}
-
-@media (max-width: 600px){
-    #animar{
-        display: block;
-    }
-
-    .item{
-        position: absolute;
-        left: 50%;
-        height: 70px;
-        width: 12px;
-        animation-name: girar;
-        animation-duration: 2s;
-        transform-origin: bottom;
-    }
-}
-
-@keyframes girar {
-    0%{
-        transform: rotate(0deg);
-    }
-    30%{
-        background-color: red;
-        transform: rotate(0deg);
-    }
-    70%{
-        background-color: red;
-        transform: rotate(360deg);
-    }
+@keyframes um{
     100%{
         transform: rotate(360deg);
     }
 }
 
-@keyframes esticar{
-    0%{
-        transform: scaleY(1);
-    }
-    70%{
-        background-color: black;
-        transform: scaleY(1);
-    }
-    85%{
-        background-color: red;
-        transform: scaleY(2);
-    }
+@keyframes dois{
     100%{
-        background-color: black;
-        transform: scaleY(1);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tres{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes quatro{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cinco{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes seis{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sete{
+    100%{
+        transform: rotate(360deg);
     }
 }
